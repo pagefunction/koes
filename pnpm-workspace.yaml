@@ -23,6 +23,6 @@ catalog:
 
 catalogs:
   effect:
-    "@effect/platform-bun": 4.0.2
+    "@effect/platform-bun": 4.1.4
     "@effect/platform-node": 4.0.2
     effect: 4.0.2
