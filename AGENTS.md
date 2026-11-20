@@ -1,3 +1,5 @@
+# AGENTS
+
 ## Git flow
 
 - `main` is trunk. Every change lands there via a short-lived branch and a PR.
@@ -40,6 +42,16 @@ Reference repos / web examples are for patterns only, never source text. Never c
 One insight per line, interrogation-first: `// What :: ...`, `// Why :: ...`, `// How :: ...`, `// When :: ...`, `// Where :: ...`, `// Which :: ...`, `// Note :: ...`, `// E.g. :: ...`. Keep lines brief and plain-spoken. No block comments. Tool directives (`oxlint-`, `eslint`, `@ts-`) stay as-is.
 
 Comments whose content starts with `::` (e.g. `{/* :: Social Icons */}`) are pinned — agents leave them exactly as-is: no cleanup, rewriting, or deletion.
+
+## Final response
+
+Shape every reply as interrogation-first sections — `**What :: ...**`, `**Why :: ...**`, `**How :: ...**`, `**Where :: ...**`, `**Which :: ...**` — then close with `**Next :: ...**` concrete actions. Same spirit as Comment style: one insight per section, brief and plain-spoken. Skimmable sections beat prose; never open with a wall of text.
+
+## Memory (`memory/`)
+
+- `memory/` holds what code doesn't answer: intent, principles, contracts, decisions. Code owns the how; `memory/` owns the why. Never duplicate code there.
+- Don't preload it. First read `memory/index.mdx`, judge which file answers your question, then read only that file.
+- Links inside `memory/` stay extension-less (`[Discovery](../product/discovery)`). Extensions break Blume routing.
 
 ## Interaction log
 
