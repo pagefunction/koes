@@ -1,6 +1,6 @@
 # OpenSEO self-host (Cloudflare · fork · separate CF account)
 
-| | |
+|  |  |
 | --- | --- |
 | **What?** | Self-hosted OpenSEO — SEO-data app + MCP + AI-Visibility tracker, deployed to a dedicated Cloudflare account using upstream's own Alchemy stack |
 | **Why?** | Our own workspace and data (D1/KV/R2 in our account); DataForSEO billed at source — the hosted service adds a 28% fee on DataForSEO requests |
@@ -23,6 +23,7 @@
   ```
 
   No OpenRouter (in-app agent SAM stays hidden), no Google Search Console, no Context.dev, no bring-your-own Access app. Extras are redeploy-only additions (see Deferred).
+
 - **Telemetry disabled** — matches the no-telemetry posture used for the executor deploy (`DO_NOT_TRACK=1` there; `OPENSEO_TELEMETRY_DISABLED=1` is the selfhost-stage equivalent).
 - **Auth:** accept the auto-provisioned Access application. Each deploy rewrites its policy from `ACCESS_ALLOWED_EMAILS` — dashboard-visible policy edits get overwritten on the next deploy, so `.env.selfhost` is the source of truth, never the dashboard.
 - **Audit JS-rendering stays rate-limited** (free plan: 1 browser action / 10 s — too slow for a crawl). Accepted for v1; escape hatches listed under Deferred.
