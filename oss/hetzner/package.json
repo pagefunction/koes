@@ -10,8 +10,7 @@
     "destroy": "alchemy destroy"
   },
   "dependencies": {
-    "@alchemy.run/hetzner": "2.0.0-beta.84",
-    "@effect/platform-bun": "catalog:effect",
+    "@alchemy.run/hetzner": "2.0.0-beta.87",
     "@effect/platform-node": "catalog:effect",
     "alchemy": "catalog:",
     "effect": "catalog:effect"

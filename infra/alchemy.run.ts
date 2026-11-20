@@ -8,7 +8,7 @@ export default Alchemy.Stack(
   "koes",
   {
     providers: Cloudflare.providers(),
-    state: Cloudflare.state({ name: "koes" }),
+    state: Cloudflare.state({ workerName: "koes-state" }),
   },
   Effect.gen(function* () {
     const website = yield* Website;
