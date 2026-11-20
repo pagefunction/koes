@@ -178,8 +178,8 @@ catalogs:
       specifier: 4.0.2
       version: 4.0.2
     '@effect/platform-node':
-      specifier: 4.0.2
-      version: 4.0.2
+      specifier: 4.1.4
+      version: 4.1.4
     effect:
       specifier: 4.0.2
       version: 4.0.2
@@ -232,7 +232,7 @@ importers:
         version: 1.168.60(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(rolldown@1.2.13)(supports-color@7.2.0)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))
       alchemy:
         specifier: 'catalog:'
-        version: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
+        version: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
       effect:
         specifier: catalog:effect
         version: 4.0.2
@@ -272,16 +272,16 @@ importers:
     dependencies:
       '@alchemy.run/cloudflare':
         specifier: 2.0.0-beta.84
-        version: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/node@24.19.1)(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)(typescript@7.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))
+        version: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/node@24.19.1)(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)(typescript@7.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))
       '@effect/platform-bun':
         specifier: catalog:effect
         version: 4.0.2(effect@4.0.2)
       '@effect/platform-node':
         specifier: catalog:effect
-        version: 4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
+        version: 4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
       alchemy:
         specifier: 'catalog:'
-        version: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
+        version: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
       effect:
         specifier: catalog:effect
         version: 4.0.2
@@ -300,16 +300,16 @@ importers:
     dependencies:
       '@alchemy.run/hetzner':
         specifier: 2.0.0-beta.84
-        version: 2.0.0-beta.84(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)
+        version: 2.0.0-beta.84(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)
       '@effect/platform-bun':
         specifier: catalog:effect
         version: 4.0.2(effect@4.0.2)
       '@effect/platform-node':
         specifier: catalog:effect
-        version: 4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
+        version: 4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
       alchemy:
         specifier: 'catalog:'
-        version: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
+        version: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
       effect:
         specifier: catalog:effect
         version: 4.0.2
@@ -809,12 +809,12 @@ packages:
     peerDependencies:
       effect: ^4.1.4
 
-  '@effect/platform-node@4.0.2':
-    resolution: {integrity: sha512-RWesXBQStnFHdD465gR5thFKgXO7FSyCKRZ56nWXB7PedNVzr8vV0nb/3MULLdri493sMz/b/pmGBTb6K8cBjQ==}
-    engines: {node: '>=18.0.0'}
+  '@effect/platform-node@4.1.4':
+    resolution: {integrity: sha512-h7QExTPq/RfYtHP/8tMlgfBvqYsuJKhxfkU6w0+NaF/ihqQ8Y3GH9t28ltupQjoqMM7P6W5gy8rOji7F0qVrmg==}
+    engines: {node: '>=22.19.0'}
     peerDependencies:
-      effect: ^4.0.2
-      redis: '>=5.0.0 <7.0.0'
+      effect: ^4.1.4
+      redis: '>=5.1.0 <7.0.0'
 
   '@effect/sql-d1@4.1.4':
     resolution: {integrity: sha512-x7UtDPNCgcAz6lvGbrf0INHxztV0qV8i4qleqPb31ADeilz7MnGYJ5Qhprqod+ySBUNPdsvXNRE9vm36TznIdg==}
@@ -4854,13 +4854,13 @@ packages:
 
 snapshots:
 
-  '@alchemy.run/acme@2.0.0-beta.84(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)':
+  '@alchemy.run/acme@2.0.0-beta.84(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)':
     dependencies:
       '@distilled.cloud/acme': 1.0.0-rc.17(effect@4.0.2)
-      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
+      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
       effect: 4.0.2
 
-  '@alchemy.run/cloudflare-runtime@2.0.0-beta.84(@distilled.cloud/cloudflare@1.0.0-rc.17(effect@4.0.2))(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/node@24.19.1)(effect@4.0.2)(rolldown@1.2.13)(typescript@7.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))':
+  '@alchemy.run/cloudflare-runtime@2.0.0-beta.84(@distilled.cloud/cloudflare@1.0.0-rc.17(effect@4.0.2))(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/node@24.19.1)(effect@4.0.2)(rolldown@1.2.13)(typescript@7.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))':
     dependencies:
       '@alchemy.run/node-utils': 2.0.0-beta.84
       '@cloudflare/unenv-preset': 2.16.2(unenv@2.0.0-rc.25)(workerd@1.20261012.1)
@@ -4876,7 +4876,7 @@ snapshots:
       yauzl: 3.4.0
     optionalDependencies:
       '@effect/platform-bun': 4.0.2(effect@4.0.2)
-      '@effect/platform-node': 4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
+      '@effect/platform-node': 4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
       rolldown: 1.2.13
       vite: 8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1)
     transitivePeerDependencies:
@@ -4884,25 +4884,25 @@ snapshots:
       - proxy-agent
       - typescript
 
-  '@alchemy.run/cloudflare@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/node@24.19.1)(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)(typescript@7.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))':
+  '@alchemy.run/cloudflare@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/node@24.19.1)(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)(typescript@7.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))':
     dependencies:
-      '@alchemy.run/acme': 2.0.0-beta.84(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)
-      '@alchemy.run/cloudflare-runtime': 2.0.0-beta.84(@distilled.cloud/cloudflare@1.0.0-rc.17(effect@4.0.2))(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/node@24.19.1)(effect@4.0.2)(rolldown@1.2.13)(typescript@7.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))
-      '@alchemy.run/docker': 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)
-      '@alchemy.run/sql': 2.0.0-beta.84(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)
+      '@alchemy.run/acme': 2.0.0-beta.84(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)
+      '@alchemy.run/cloudflare-runtime': 2.0.0-beta.84(@distilled.cloud/cloudflare@1.0.0-rc.17(effect@4.0.2))(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/node@24.19.1)(effect@4.0.2)(rolldown@1.2.13)(typescript@7.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))
+      '@alchemy.run/docker': 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)
+      '@alchemy.run/sql': 2.0.0-beta.84(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)
       '@distilled.cloud/aws4signer': 1.0.0-rc.17(effect@4.0.2)
       '@distilled.cloud/cloudflare': 1.0.0-rc.17(effect@4.0.2)
       '@distilled.cloud/core': 1.0.0-rc.17(effect@4.0.2)
       '@distilled.cloud/iceberg': 1.0.0-rc.17(effect@4.0.2)
       '@effect/sql-d1': 4.1.4(effect@4.0.2)
-      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
+      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
       effect: 4.0.2
       pathe: 2.0.3
       rolldown: 1.2.13
       tinyglobby: 0.2.17
     optionalDependencies:
       '@effect/platform-bun': 4.0.2(effect@4.0.2)
-      '@effect/platform-node': 4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
+      '@effect/platform-node': 4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
       vite: 8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1)
     transitivePeerDependencies:
       - '@effect/sql-libsql'
@@ -4914,23 +4914,23 @@ snapshots:
       - proxy-agent
       - typescript
 
-  '@alchemy.run/docker@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)':
+  '@alchemy.run/docker@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)':
     dependencies:
-      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
+      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
       effect: 4.0.2
       rolldown: 1.2.13
     optionalDependencies:
       '@effect/platform-bun': 4.0.2(effect@4.0.2)
 
-  '@alchemy.run/hetzner@2.0.0-beta.84(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)':
+  '@alchemy.run/hetzner@2.0.0-beta.84(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)':
     dependencies:
       '@distilled.cloud/core': 1.0.0-rc.17(effect@4.0.2)
       '@distilled.cloud/hetzner': 1.0.0-rc.17(effect@4.0.2)
-      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
+      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
       effect: 4.0.2
       rolldown: 1.2.13
     optionalDependencies:
-      '@effect/platform-node': 4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
+      '@effect/platform-node': 4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
 
   '@alchemy.run/node-utils@2.0.0-beta.84':
     dependencies:
@@ -4941,9 +4941,9 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.3.0
 
-  '@alchemy.run/sql@2.0.0-beta.84(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)':
+  '@alchemy.run/sql@2.0.0-beta.84(alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0))(effect@4.0.2)':
     dependencies:
-      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
+      alchemy: 2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0)
       effect: 4.0.2
 
   '@arcanis/slice-ansi@1.1.1':
@@ -5534,7 +5534,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))':
+  '@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))':
     dependencies:
       '@effect/platform-node-shared': 4.1.4(effect@4.0.2)
       effect: 4.0.2
@@ -6897,7 +6897,7 @@ snapshots:
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
-  alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0):
+  alchemy@2.0.0-beta.84(@effect/platform-bun@4.0.2(effect@4.0.2))(@effect/platform-node@4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1)))(@types/react@19.3.0)(effect@4.0.2)(vite@8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))(ws@8.23.0):
     dependencies:
       '@alchemy.run/node-utils': 2.0.0-beta.84
       '@alchemy.run/sigil': 0.1.0-alpha.1(@types/react@19.3.0)
@@ -6911,7 +6911,7 @@ snapshots:
       yaml: 2.9.1
     optionalDependencies:
       '@effect/platform-bun': 4.0.2(effect@4.0.2)
-      '@effect/platform-node': 4.0.2(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
+      '@effect/platform-node': 4.1.4(effect@4.0.2)(redis@6.3.1(@opentelemetry/api@1.9.1))
       vite: 8.3.4(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1)
       ws: 8.23.0
     transitivePeerDependencies:

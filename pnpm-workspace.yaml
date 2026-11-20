@@ -24,5 +24,5 @@ catalog:
 catalogs:
   effect:
     "@effect/platform-bun": 4.0.2
-    "@effect/platform-node": 4.0.2
+    "@effect/platform-node": 4.1.4
     effect: 4.0.2
