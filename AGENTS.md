@@ -1,8 +1,8 @@
 # AGENTS
 
-## Git flow
+## Git workflow
 
-- `main` is trunk. Every change lands there via a short-lived branch and a PR.
+- Trunk-based: `main` is trunk. Every change lands there via a short-lived branch and a PR.
 - Branch: `<type>/<slug>` (e.g. `feat/coder-plan`), rebase on `main`, squash merge, delete after.
 - No `dev`, `develop`, release, or hotfix branches.
 - Never force-push `main`; no merge commits on `main`.
