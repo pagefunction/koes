@@ -1,6 +1,6 @@
 # Executor self-host (Docker · Hetzner · Alchemy)
 
-| | |
+|  |  |
 | --- | --- |
 | **What?** | Self-hosted Executor — one container (API + MCP + auth + app runtime + dashboard) over an embedded PGlite database |
 | **Why?** | Our own infrastructure: accounts, credentials and keys stay on our VM |
@@ -24,7 +24,7 @@
 | Fact | Consequence for the stack |
 | --- | --- |
 | Executor self-host is one container: API + MCP + auth + app runtime (workerd) + dashboard over embedded PGlite. No separate DB/queue/proxy. | Only `Server` + 3 Docker resources needed. |
-| Hetzner `Server` has no cloud-init/userdata hook. | Install Docker via a deploy-time `Hetzner.Ssh(server).exec(...)` Effect: `command -v docker || curl -fsSL https://get.docker.com \| sh` (idempotent, runs each deploy). |
+| Hetzner `Server` has no cloud-init/userdata hook. | Install Docker via a deploy-time `Hetzner.Ssh(server).exec(...)` Effect: `command -v docker |  | curl -fsSL https://get.docker.com \| sh` (idempotent, runs each deploy). |
 | `Docker.Context` is a declarative resource (`docker: "host=ssh://root@<ip>"`); every Docker resource takes a `context` prop. | The remote box is a resource, not a manual `docker context create` step. |
 | `Container.ports` → `-p` builds `${external}:${internal}/${proto}`, and `external: "127.0.0.1:4400"` passes through unchanged (random-port check is `parseInt === 0`). | `external: "127.0.0.1:4400", internal: 4400` gives the docs' loopback-only binding. |
 | All persistent state lives in the named data volume at `/app/data` (embedded DB, app builds, generated `auth-secret.key` + `encryption.key`). Keys regenerate nothing; startup **fails** if a saved key is missing/invalid for an existing DB. | One named volume, never change its props after it holds data; volume is the thing to back up. |
@@ -63,9 +63,7 @@ Outputs: `server.ipv4` (+ tunnel hint).
 
 ## Ops notes
 
-- **Backup (before every upgrade):** snapshot the data volume —
-  `ssh root@<ip> 'docker run --rm -v <executor-data-volume>:/data -v /backup:/backup alpine tar czf /backup/executor-data-$(date +%F).tgz -C /data .'`
-  Losing it loses auth keys + credential encryption — restore it exactly; do not let a re-deploy mint new keys for a populated DB.
+- **Backup (before every upgrade):** snapshot the data volume — `ssh root@<ip> 'docker run --rm -v <executor-data-volume>:/data -v /backup:/backup alpine tar czf /backup/executor-data-$(date +%F).tgz -C /data .'` Losing it loses auth keys + credential encryption — restore it exactly; do not let a re-deploy mint new keys for a populated DB.
 - **Upgrades:** bump the pinned `RemoteImage` tag to the next exact version → Alchemy replaces the container (delete-first per provider docs), volume persists. Pending item: check whether Renovate can manage floating `ghcr.io` digests in `.ts` — if yes, automate as PRs; until then, manual bumps following Executor releases.
 - **Teardown:** `alchemy destroy` removes box + container + volume (data loss). Only for full teardown intent.
 - **Server resize later:** serverType changes are painful on Hetzner; decide size at creation. `cx23` should be fine for a single user with `EXECUTOR_APP_WORKERS` lowered; bump to a 4 vCPU type if worker pressure shows.
@@ -74,7 +72,7 @@ Outputs: `server.ipv4` (+ tunnel hint).
 
 - No public origin: browser sign-in and dashboard work via tunnel, but OAuth account-connect flows that need `<origin>/api/oauth/callback` publicly reachable may fail. If needed later: Tailscale/Funnel or a v1.1 dedicated `Hetzner.Firewall` + reverse proxy with a domain.
 - No container healthcheck v1 (unknown shell tooling inside image); Railway docs use `/health` — can add a healthcheck after verifying the image.
-- Docker volume lives on the VM root disk — a destroyed/replaced *server* loses it (Hetzner `Volume` attachment would need a restructure; backups cover this expectation).
+- Docker volume lives on the VM root disk — a destroyed/replaced _server_ loses it (Hetzner `Volume` attachment would need a restructure; backups cover this expectation).
 
 ## Repo-conformance (per AGENTS.md)
 
