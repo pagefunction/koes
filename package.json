@@ -27,7 +27,7 @@
     "oxfmt": "0.72.0",
     "oxlint": "1.87.0",
     "renovate": "44.148.6",
-    "turbo": "2.11.11",
+    "turbo": "2.11.12",
     "typescript": "catalog:",
     "ultracite": "7.12.4"
   },
