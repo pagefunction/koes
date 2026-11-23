@@ -23,5 +23,5 @@ catalog:
 
 catalogs:
   effect:
-    "@effect/platform-node": 4.1.4
-    effect: 4.1.4
+    "@effect/platform-node": 4.1.5
+    effect: 4.1.5
