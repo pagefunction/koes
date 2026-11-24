@@ -250,8 +250,8 @@ importers:
         version: 19.3.1(react@19.3.1)
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: 5.20261120.1
-        version: 5.20261120.1
+        specifier: 5.20261121.1
+        version: 5.20261121.1
       '@repo/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
@@ -665,8 +665,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@5.20261120.1':
-    resolution: {integrity: sha512-bpaDXQ1oYqWhLCAqV5fO0pPB2tduDEEFyIMedZVi0NqzW/7T8DlJ8hUe3DqoDG1RQ8X7zTbK555Qr9yAyyUhmQ==}
+  '@cloudflare/workers-types@5.20261121.1':
+    resolution: {integrity: sha512-eLzyhm8/Qn+yshOObNIVsV8YJyWR9BOBCnnuqmrqY5uhsVDlLMdCmOQ34oC3eoVLkav94Dc7MWcfC+FuaxdNjA==}
 
   '@commitlint/cli@21.2.4':
     resolution: {integrity: sha512-g3M/wrQdElqGH5vROIeL2QiYIxrzqUkhCgsDyDlWfKEyQdCt10OyMB28W2cJtpZ+VNGMvmaN923infr1hOfyrg==}
@@ -5321,7 +5321,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20261026.1':
     optional: true
 
-  '@cloudflare/workers-types@5.20261120.1': {}
+  '@cloudflare/workers-types@5.20261121.1': {}
 
   '@commitlint/cli@21.2.4(conventional-commits-parser@7.1.4)(typescript@7.0.2)':
     dependencies:
@@ -5509,7 +5509,7 @@ snapshots:
 
   '@effect/sql-d1@4.1.4(effect@4.1.5)':
     dependencies:
-      '@cloudflare/workers-types': 5.20261120.1
+      '@cloudflare/workers-types': 5.20261121.1
       effect: 4.1.5
 
   '@emnapi/core@2.0.0-beta.2':
