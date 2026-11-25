@@ -18,5 +18,5 @@ function Home() {
 
 export const Route = createFileRoute("/")({
   component: Home,
-  loader: () => getGreeting(),
+  loader: async () => await getGreeting(),
 });
