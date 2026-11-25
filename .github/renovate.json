@@ -102,6 +102,11 @@
       "description": "node :: LTS only :: odd-numbered releases are short-lived",
       "matchPackageNames": ["node"],
       "allowedVersions": "/^\\d*[02468]\\./"
+    },
+    {
+      "description": "typescript :: released builds only :: tsrs and effect-tsgo cannot load dev nightlies",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "!/-dev\\./"
     }
   ]
 }
