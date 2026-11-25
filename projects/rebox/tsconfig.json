@@ -2,7 +2,10 @@
   "extends": "@repo/tsconfig/app/no-dom",
   "compilerOptions": {
     "allowImportingTsExtensions": true,
-    "types": ["node"]
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["alchemy.run.ts", "**/*.ts"],
   "exclude": ["node_modules"]

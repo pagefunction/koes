@@ -1,13 +1,26 @@
+import "varlock/auto-load";
+import { readFileSync } from "node:fs";
+
 import * as Hetzner from "@alchemy.run/hetzner";
+import { ENV } from "varlock/env";
 
-export const Key = Hetzner.SshKey("omarchy", {
-  publicKey:
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKKNDCGdsMAsIma08Hn/XTmmUhXsFBdfN3EdLdEm8pBv hetzner",
-});
+import { Tailscale } from "./firewalls";
 
+// cloud-init :: bootstrap
+const userData = readFileSync(
+  new URL("config/cloud-init.yaml", import.meta.url),
+  "utf-8"
+)
+  .replaceAll("<TAILSCALE_AUTH_KEY>", ENV.TAILSCALE_AUTH_KEY)
+  .replaceAll("<SSH_PUBLIC_KEY>", ENV.SSH_PUBLIC_KEY)
+  .replaceAll("<USERNAME>", ENV.USERNAME);
+
+// Server
 export const Box = Hetzner.Server("box", {
-  serverType: "cx23",
+  name: "box",
+  serverType: "cpx02",
   image: "ubuntu-24.04",
-  location: "nbg1",
-  sshKeys: [Key],
+  location: "hel1",
+  firewalls: [Tailscale],
+  userData,
 });

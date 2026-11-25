@@ -22,7 +22,7 @@ provision → configure → connect → work → preserve → destroy
 
 - **provision:** create a cloud machine with the resources you need.
 - **configure:** install the operating system dependencies and developer toolchain from code.
-- **connect:** access the machine remotely through a private network and ssh.
+- **connect:** access the machine over the tailnet with tailscale ssh.
 - **work:** use your regular editor, projects, development services, and ai agents.
 - **preserve:** keep important files and state outside the disposable machine.
 - **destroy:** remove the machine and its compute costs stop.

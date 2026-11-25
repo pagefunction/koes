@@ -5,15 +5,17 @@
   "type": "module",
   "scripts": {
     "typecheck": "effect-tsgo tsrs --noEmit",
-    "plan": "alchemy plan",
-    "deploy": "alchemy deploy",
-    "destroy": "alchemy destroy"
+    "env:codegen": "varlock codegen",
+    "plan": "mise run plan",
+    "deploy": "mise run deploy",
+    "destroy": "mise run destroy"
   },
   "dependencies": {
     "@alchemy.run/hetzner": "2.0.0-beta.87",
     "@effect/platform-node": "catalog:effect",
     "alchemy": "catalog:",
-    "effect": "catalog:effect"
+    "effect": "catalog:effect",
+    "varlock": "1.25.0"
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",

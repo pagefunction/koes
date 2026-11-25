@@ -2,7 +2,8 @@ import * as Hetzner from "@alchemy.run/hetzner";
 import * as Alchemy from "alchemy";
 import * as Effect from "effect/Effect";
 
-import { Box } from "./src/server";
+import { Tailscale } from "@/firewalls";
+import { Box } from "@/server";
 
 export default Alchemy.Stack(
   "rebox",
@@ -12,9 +13,11 @@ export default Alchemy.Stack(
   },
   Effect.gen(function* () {
     const server = yield* Box;
+    const firewall = yield* Tailscale;
 
     return {
       ipv4: server.ipv4,
+      firewall: firewall.appliedTo,
     };
   })
 );

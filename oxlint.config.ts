@@ -5,7 +5,7 @@ import core from "ultracite/oxlint/core";
 export default defineConfig({
   env: core.env,
   extends: [core, effect],
-  ignorePatterns: ["**/routeTree.gen.ts"],
+  ignorePatterns: ["**/routeTree.gen.ts", "**/env.ts", "**/env.d.ts"],
   options: { typeAware: true, typeCheck: false },
   rules: {
     // Effect.gen / Effect.fn use anonymous `function*` as idiom.

@@ -1,0 +1,11 @@
+[tasks.plan]
+description = "Preview infrastructure changes"
+run = "pnpm exec alchemy plan"
+
+[tasks.deploy]
+description = "Deploy the development environment"
+run = "pnpm exec alchemy deploy"
+
+[tasks.destroy]
+description = "Destroy the development environment"
+run = "pnpm exec alchemy destroy"
