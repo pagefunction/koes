@@ -6,7 +6,7 @@
   "sideEffects": false,
   "scripts": {
     "clean": "rm -rf .nitro .output .tanstack .turbo node_modules",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "effect-tsgo tsrs --noEmit",
     "dev": "vite dev --port 3000",
     "build": "vite build"
   },
