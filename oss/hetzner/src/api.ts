@@ -1,3 +1,4 @@
+// oxlint-disable effecttsgo/unstable-api-usage
 import * as Hetzner from "@alchemy.run/hetzner";
 import * as Effect from "effect/Effect";
 import { HttpServerRequest } from "effect/http/HttpServerRequest";
